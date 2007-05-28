@@ -1,0 +1,38 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                endingFrequencyChange = id; 
+                resetSweep = id; 
+                startingFrequencyChange = id; 
+                sweepRateChange = id; 
+                toggleSweep = id; 
+            }; 
+            CLASS = MySweepController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                endingFrequency = NSControl; 
+                endingFrequencyDisplay = NSTextField; 
+                startingFrequency = NSControl; 
+                startingFrequencyDisplay = NSTextField; 
+                sweepButton = NSButton; 
+                sweepRate = NSControl; 
+                sweepRateDisplay = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {durationEntered = id; sweepButton = id; }; 
+            CLASS = SweepController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                DurationBox = NSTextField; 
+                StartFrequency = NSSlider; 
+                StopFrequency = NSSlider; 
+            }; 
+            SUPERCLASS = NSObjectController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

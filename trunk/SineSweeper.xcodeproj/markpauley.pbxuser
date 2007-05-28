@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecture = ppc;
+		activeBuildConfigurationName = Development;
+		activeExecutable = E71DBCF90A5F4E8B00C22408 /* SineSweeper */;
+		activeTarget = 8D1107260486CEB800E47090 /* SineSweeper */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* SineSweeper */,
+		);
+		codeSenseManager = E71DBD120A5F4E9800C22408 /* Code sense */;
+		executables = (
+			E71DBCF90A5F4E8B00C22408 /* SineSweeper */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					114,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 201751943;
+			PBXWorkspaceStateSaveDate = 201751943;
+		};
+		perUserProjectItems = {
+			E71799F40C0682DB00F14356 /* PBXTextBookmark */ = E71799F40C0682DB00F14356 /* PBXTextBookmark */;
+			E71799F50C0682DB00F14356 /* PBXTextBookmark */ = E71799F50C0682DB00F14356 /* PBXTextBookmark */;
+			E7179A020C0682E400F14356 /* PBXTextBookmark */ = E7179A020C0682E400F14356 /* PBXTextBookmark */;
+			E7179A030C0682E400F14356 /* PBXTextBookmark */ = E7179A030C0682E400F14356 /* PBXTextBookmark */;
+			E755E7B60BCAD15D002EB047 = E755E7B60BCAD15D002EB047 /* PBXBookmark */;
+			E755E7BE0BCAD67A002EB047 = E755E7BE0BCAD67A002EB047 /* PBXTextBookmark */;
+			E77B6E320BCACEFB0039A7F6 = E77B6E320BCACEFB0039A7F6 /* PBXTextBookmark */;
+			E77B6E360BCACEFB0039A7F6 = E77B6E360BCACEFB0039A7F6 /* PBXTextBookmark */;
+			E77B6E3A0BCACEFB0039A7F6 = E77B6E3A0BCACEFB0039A7F6 /* PBXTextBookmark */;
+			E77B6E3E0BCACEFB0039A7F6 = E77B6E3E0BCACEFB0039A7F6 /* PBXTextBookmark */;
+			E77B6E420BCACEFB0039A7F6 = E77B6E420BCACEFB0039A7F6 /* PBXTextBookmark */;
+			E77B6E480BCACEFB0039A7F6 = E77B6E480BCACEFB0039A7F6 /* PBXTextBookmark */;
+		};
+		sourceControlManager = E71DBD110A5F4E9800C22408 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	3060F7F8067EBC270008C431 /* MySweepController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {805, 574}}";
+			sepNavSelRange = "{642, 0}";
+			sepNavVisRect = "{{0, 236}, {805, 215}}";
+		};
+	};
+	3060F7F9067EBC270008C431 /* MySweepController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {805, 1806}}";
+			sepNavSelRange = "{2329, 54}";
+			sepNavVisRect = "{{0, 1412}, {805, 215}}";
+		};
+	};
+	30DB7339068E6EE000A1115E /* SinePlayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1174, 1694}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {1174, 680}}";
+		};
+	};
+	30DB733A068E6EE000A1115E /* SinePlayer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {805, 5880}}";
+			sepNavSelRange = "{3420, 0}";
+			sepNavVisRect = "{{0, 1398}, {805, 192}}";
+			sepNavWindowFrame = "{{16, 0}, {1173, 832}}";
+		};
+	};
+	8D1107260486CEB800E47090 /* SineSweeper */ = {
+		activeExec = 0;
+		executables = (
+			E71DBCF90A5F4E8B00C22408 /* SineSweeper */,
+		);
+	};
+	E71799F40C0682DB00F14356 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'curFreq' undeclared (first use in this function)";
+		fRef = 30DB733A068E6EE000A1115E /* SinePlayer.m */;
+		rLen = 1;
+		rLoc = 101;
+		rType = 1;
+	};
+	E71799F50C0682DB00F14356 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30DB733A068E6EE000A1115E /* SinePlayer.m */;
+		name = "SinePlayer.m: 109";
+		rLen = 0;
+		rLoc = 3420;
+		rType = 0;
+		vrLen = 669;
+		vrLoc = 2801;
+	};
+	E7179A020C0682E400F14356 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30DB7339068E6EE000A1115E /* SinePlayer.h */;
+		rLen = 0;
+		rLoc = 2147483647;
+		rType = 0;
+	};
+	E7179A030C0682E400F14356 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30DB7339068E6EE000A1115E /* SinePlayer.h */;
+		name = "SinePlayer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1251;
+		vrLoc = 0;
+	};
+	E71DBCF90A5F4E8B00C22408 /* SineSweeper */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SineSweeper;
+		sourceDirectories = (
+		);
+	};
+	E71DBD110A5F4E9800C22408 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	E71DBD120A5F4E9800C22408 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	E755E7B60BCAD15D002EB047 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 30DB733A068E6EE000A1115E /* SinePlayer.m */;
+	};
+	E755E7BE0BCAD67A002EB047 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30DB733A068E6EE000A1115E /* SinePlayer.m */;
+		name = "SinePlayer.m: 242";
+		rLen = 0;
+		rLoc = 6679;
+		rType = 0;
+		vrLen = 1740;
+		vrLoc = 6261;
+	};
+	E77B6E320BCACEFB0039A7F6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3060F7F8067EBC270008C431 /* MySweepController.h */;
+		name = "MySweepController.h: 32";
+		rLen = 54;
+		rLoc = 843;
+		rType = 0;
+		vrLen = 1254;
+		vrLoc = 0;
+	};
+	E77B6E360BCACEFB0039A7F6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3060F7F9067EBC270008C431 /* MySweepController.m */;
+		name = "MySweepController.m: 102";
+		rLen = 0;
+		rLoc = 2073;
+		rType = 0;
+		vrLen = 1155;
+		vrLoc = 1387;
+	};
+	E77B6E3A0BCACEFB0039A7F6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30DB7339068E6EE000A1115E /* SinePlayer.h */;
+		name = "SinePlayer.h: 108";
+		rLen = 51;
+		rLoc = 2998;
+		rType = 0;
+		vrLen = 1633;
+		vrLoc = 1423;
+	};
+	E77B6E3E0BCACEFB0039A7F6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 30DB733A068E6EE000A1115E /* SinePlayer.m */;
+		name = "SinePlayer.m: 6";
+		rLen = 0;
+		rLoc = 126;
+		rType = 0;
+		vrLen = 1503;
+		vrLoc = 0;
+	};
+	E77B6E420BCACEFB0039A7F6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E77B6E430BCACEFB0039A7F6 /* CoreAudio.h */;
+		rLen = 0;
+		rLoc = 2147483647;
+		rType = 0;
+	};
+	E77B6E430BCACEFB0039A7F6 /* CoreAudio.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CoreAudio.h;
+		path = /System/Library/Frameworks/CoreAudio.framework/Versions/A/Headers/CoreAudio.h;
+		sourceTree = "<absolute>";
+	};
+	E77B6E480BCACEFB0039A7F6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E77B6E490BCACEFB0039A7F6 /* CoreAudioTypes.h */;
+		rLen = 0;
+		rLoc = 2147483647;
+		rType = 0;
+	};
+	E77B6E490BCACEFB0039A7F6 /* CoreAudioTypes.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CoreAudioTypes.h;
+		path = /System/Library/Frameworks/CoreAudio.framework/Versions/A/Headers/CoreAudioTypes.h;
+		sourceTree = "<absolute>";
+	};
+}

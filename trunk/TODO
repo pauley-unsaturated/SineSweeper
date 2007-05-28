@@ -1,0 +1,30 @@
+SineSweeper ideas:
+
+Allow for several different types of waveform
+*sine (done)
+*pulse / analog pulse
+*triangle / analog triangle
+*sawtooth / analog sawtooth
+
+To do this, I have to: 
+*create an abstract superclass of a "player"
+*subclass the player for all types
+*hook it into the interface
+
+
+*****
+
+Allow for several different types of frequency modulation
+*sawtooth/ramp
+*exponential ramp (done)
+*pulse
+*triangle
+*sawtooth
+*constant
+
+To do this, I have to:
+*subclass the player for the remaining types
+*fill a modulation buffer with a slave player at the desired modulation rate
+*hook it into the interface
+
+Could even modulate the frequency modulation...
