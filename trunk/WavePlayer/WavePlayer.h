@@ -59,7 +59,7 @@
 * This needs to change.  The caller of fillBuffer should be the manager of the buffer.
 * The detail that we keep a buffer should be hidden by WavePlayer from the subclasses.
 */
--(void)fillBuffer;
+-(void)fillBuffer:(void*)buffer withFrames:(UInt32)numFrames ofStreamDescription:(AudioStreamBasicDescription)bufferDescription;
 
 /* 
 * For setting the buffer-fill callback.							

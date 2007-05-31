@@ -1,7 +1,10 @@
 /* MySweepController */
 
 #import <Cocoa/Cocoa.h>
-#import <SinePlayer.h>
+#import "WavePlayer.h"
+#import "SinePlayer.h"
+#import "SawPlayer.h"
+
 #import <TwoDimensionalControl/TwoDimensionalControl.h>
 
 @interface MySweepController : NSObject

@@ -13,9 +13,9 @@
 #include <strings.h>
 
 
-#define kAudioFormatFlags  kLinearPCMFormatFlagIsSignedInteger\
-                         | kLinearPCMFormatFlagIsBigEndian\
-                         | kLinearPCMFormatFlagIsPacked
+#define kAudioFormatFlags  kAudioFormatFlagIsSignedInteger\
+                         | kAudioFormatFlagsNativeEndian\
+						 | kAudioFormatFlagIsPacked
 
 
 //TODO: move these to a nicer location or make em #defines... for christs sake
@@ -137,10 +137,7 @@ static void streamPropertyListenerStub (void *inRefCon,
   AURenderCallbackStruct renderCallback;
   UInt32 aStreamSize;
   
-  // initialize the output unit (default unit of course)  
-  AudioUnitReset(myAudioUnit,
-				 kAudioUnitScope_Input,
-				 0);
+
   
   // set the callback function
   renderCallback.inputProc = (void*)renderStub;
@@ -152,7 +149,7 @@ static void streamPropertyListenerStub (void *inRefCon,
 									 0,
 									 &renderCallback,
 									 sizeof(AURenderCallbackStruct)) );
-  verify_noerr( AudioUnitInitialize(myAudioUnit));
+  
   
   verify_noerr( AudioUnitSetProperty(myAudioUnit,
 									 kAudioUnitProperty_StreamFormat,
@@ -160,7 +157,7 @@ static void streamPropertyListenerStub (void *inRefCon,
 									 0,
 									 &sourceStreamFormat,
 									 sizeof(AudioStreamBasicDescription)) );
-  
+  verify_noerr( AudioUnitInitialize(myAudioUnit));
 
 
   aStreamSize = sizeof(AudioStreamBasicDescription);
@@ -179,7 +176,7 @@ static void streamPropertyListenerStub (void *inRefCon,
   
   curWavePosition = 0;
   curRealFreq = startFreq;
-
+  
   verify_noerr(AudioOutputUnitStart(myAudioUnit));
 }
 
@@ -218,7 +215,7 @@ static void streamPropertyListenerStub (void *inRefCon,
   
   ioData->mData = playBuffer;
 
-  [self fillBuffer];
+  //[self fillBuffer:playBuffer withFrames: ofStreamDescription:sourceStreamFormat];
 
   return converterErr;
 }
@@ -266,7 +263,7 @@ static void streamPropertyListenerStub (void *inRefCon,
 	//numFrames = bufferList->mBuffers[0].mDataByteSize / destStreamFormat.mBytesPerFrame;
 	
 	if(!numFrames)return noErr;
-	packetsRendered = numFrames / destStreamFormat.mFramesPerPacket;
+	packetsRendered = numFrames / sourceStreamFormat.mFramesPerPacket;
 	
 	if(playBufferSize < numFrames * sourceStreamFormat.mBytesPerFrame) {
       if(playBuffer)
@@ -292,7 +289,12 @@ static void streamPropertyListenerStub (void *inRefCon,
 packetDescriptionHandle: (AudioStreamPacketDescription**)outDataPacketDescription
 {
   int curBufferNum;
-  [self fillBuffer];
+  UInt32 numFrames = *ioNumberDataPackets * sourceStreamFormat.mFramesPerPacket;
+  [self createFrequencyEnvelope:freqBuffer ofSize:numFrames];
+  [self fillBuffer:playBuffer 
+		withFrames:numFrames
+	ofStreamDescription:sourceStreamFormat];
+	
   for(curBufferNum = 0; curBufferNum < bufferList->mNumberBuffers; curBufferNum++)
   {
 	bufferList->mBuffers[curBufferNum].mDataByteSize = playBufferSize;
@@ -341,7 +343,7 @@ packetDescriptionHandle: (AudioStreamPacketDescription**)outDataPacketDescriptio
 		&ci, inID, inScope, inElement);
 }
 
--(void)fillBuffer {
+-(void)fillBuffer:(void*)buffer withFrames:(UInt32)numFrames ofStreamDescription:(AudioStreamBasicDescription)bufferDescription {
 
 }
 

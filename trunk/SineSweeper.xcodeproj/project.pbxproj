@@ -21,6 +21,8 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E76BA65A0C0E8E17006750EF /* WavePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E76BA6580C0E8E17006750EF /* WavePlayer.h */; };
 		E76BA65B0C0E8E17006750EF /* WavePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6590C0E8E17006750EF /* WavePlayer.m */; };
+		E76BA6AF0C0E9811006750EF /* SawPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E76BA6AD0C0E9811006750EF /* SawPlayer.h */; };
+		E76BA6B00C0E9811006750EF /* SawPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6AE0C0E9811006750EF /* SawPlayer.m */; };
 		E773906B0C0E899D00D98904 /* TwoDimensionalControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */; };
 		E77B6E1E0BCAA9E80039A7F6 /* TwoDimensionalControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */; };
 /* End PBXBuildFile section */
@@ -69,13 +71,15 @@
 		3060F7F8067EBC270008C431 /* MySweepController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MySweepController.h; sourceTree = "<group>"; };
 		3060F7F9067EBC270008C431 /* MySweepController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MySweepController.m; sourceTree = "<group>"; };
 		3078873F0A156C8E008F1F83 /* SineSweeperUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SineSweeperUnit-Info.plist"; sourceTree = "<group>"; };
-		30DB7339068E6EE000A1115E /* SinePlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SinePlayer.h; sourceTree = "<group>"; };
-		30DB733A068E6EE000A1115E /* SinePlayer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SinePlayer.m; sourceTree = "<group>"; };
+		30DB7339068E6EE000A1115E /* SinePlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SinePlayer.h; path = WavePlayer/SinePlayer.h; sourceTree = "<group>"; };
+		30DB733A068E6EE000A1115E /* SinePlayer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SinePlayer.m; path = WavePlayer/SinePlayer.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* SineSweeper_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineSweeper_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76BA6580C0E8E17006750EF /* WavePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavePlayer.h; sourceTree = "<group>"; };
 		E76BA6590C0E8E17006750EF /* WavePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavePlayer.m; sourceTree = "<group>"; };
+		E76BA6AD0C0E9811006750EF /* SawPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SawPlayer.h; sourceTree = "<group>"; };
+		E76BA6AE0C0E9811006750EF /* SawPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SawPlayer.m; sourceTree = "<group>"; };
 		E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwoDimensionalControl.framework; path = ../TwoDimensionalControl/build/Development/TwoDimensionalControl.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -197,10 +201,10 @@
 		E76BA6570C0E8DF2006750EF /* WavePlayer */ = {
 			isa = PBXGroup;
 			children = (
-				E76BA6A80C0E94EA006750EF /* SawPlayer */,
-				30DB7336068E6EC700A1115E /* SinePlayer */,
 				E76BA6580C0E8E17006750EF /* WavePlayer.h */,
 				E76BA6590C0E8E17006750EF /* WavePlayer.m */,
+				30DB7336068E6EC700A1115E /* SinePlayer */,
+				E76BA6A80C0E94EA006750EF /* SawPlayer */,
 			);
 			path = WavePlayer;
 			sourceTree = "<group>";
@@ -208,6 +212,8 @@
 		E76BA6A80C0E94EA006750EF /* SawPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E76BA6AD0C0E9811006750EF /* SawPlayer.h */,
+				E76BA6AE0C0E9811006750EF /* SawPlayer.m */,
 			);
 			name = SawPlayer;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 				3060F7FA067EBC270008C431 /* MySweepController.h in Headers */,
 				30DB733B068E6EE000A1115E /* SinePlayer.h in Headers */,
 				E76BA65A0C0E8E17006750EF /* WavePlayer.h in Headers */,
+				E76BA6AF0C0E9811006750EF /* SawPlayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +298,7 @@
 				3060F7FB067EBC270008C431 /* MySweepController.m in Sources */,
 				30DB733C068E6EE000A1115E /* SinePlayer.m in Sources */,
 				E76BA65B0C0E8E17006750EF /* WavePlayer.m in Sources */,
+				E76BA6B00C0E9811006750EF /* SawPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
