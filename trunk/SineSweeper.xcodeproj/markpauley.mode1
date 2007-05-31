@@ -185,7 +185,128 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>E76BA6900C0E92AA006750EF</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>WavePlayer.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>E76BA6910C0E92AA006750EF</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>WavePlayer.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>E76BA6A90C0E9505006750EF</string>
+						<key>history</key>
+						<array>
+							<string>E76BA6920C0E92AA006750EF</string>
+						</array>
+					</dict>
+					<key>Split1</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>E76BA6940C0E92AA006750EF</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>WavePlayer.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>E76BA6AA0C0E9505006750EF</string>
+						<key>history</key>
+						<array>
+							<string>E76BA6950C0E92AA006750EF</string>
+							<string>E76BA6960C0E92AA006750EF</string>
+						</array>
+						<key>prevStack</key>
+						<array>
+							<string>E76BA6970C0E92AA006750EF</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>2</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {840, 913}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>6 74 840 954 0 0 1680 1028 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>E76BA6990C0E92AA006750EF</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>SinePlayer.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>E76BA69A0C0E92AA006750EF</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>SinePlayer.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>E76BA6AB0C0E9505006750EF</string>
+						<key>history</key>
+						<array>
+							<string>E76BA6550C0E8D70006750EF</string>
+						</array>
+					</dict>
+					<key>Split1</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>E76BA69C0C0E92AA006750EF</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>SinePlayer.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>E76BA6AC0C0E9505006750EF</string>
+						<key>history</key>
+						<array>
+							<string>E76BA69D0C0E92AA006750EF</string>
+							<string>E76BA69E0C0E92AA006750EF</string>
+						</array>
+						<key>prevStack</key>
+						<array>
+							<string>E76BA69F0C0E92AA006750EF</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>2</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {840, 913}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>696 74 840 954 0 0 1680 1028 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -256,12 +377,16 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>E76BA6570C0E8DF2006750EF</string>
+								<string>080E96DDFE201D6D7F000001</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -285,7 +410,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>403 339 690 397 0 0 1680 1028 </string>
+						<string>572 306 690 397 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -322,7 +447,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {482, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>403 339 690 397 0 0 1680 1028 </string>
+								<string>572 306 690 397 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -342,7 +467,7 @@
 								<key>Frame</key>
 								<string>{{0, 5}, {482, 351}}</string>
 								<key>RubberWindowFrame</key>
-								<string>403 339 690 397 0 0 1680 1028 </string>
+								<string>572 306 690 397 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -502,10 +627,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>E76BA6990C0E92AA006750EF</string>
+		<string>E76BA6900C0E92AA006750EF</string>
 		<string>/Users/markpauley/programs/Cocoa/SineSweeper/SineSweeper.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>403 339 690 397 0 0 1680 1028 </string>
+	<string>572 306 690 397 0 0 1680 1028 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
@@ -526,7 +654,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>WavePlayer.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -535,7 +663,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1070, 227}}</string>
 								<key>RubberWindowFrame</key>
-								<string>318 344 1070 509 0 0 1680 1028 </string>
+								<string>599 79 1070 509 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -561,7 +689,7 @@
 								<key>Frame</key>
 								<string>{{0, 232}, {1070, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>318 344 1070 509 0 0 1680 1028 </string>
+								<string>599 79 1070 509 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -584,18 +712,18 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>E77390430C0E890D00D98904</string>
-				<string>E77390440C0E890D00D98904</string>
+				<string>E76BA68D0C0E922D006750EF</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.build</string>
 			<key>WindowString</key>
-			<string>318 344 1070 509 0 0 1680 1028 </string>
+			<string>599 79 1070 509 0 0 1680 1028 </string>
 			<key>WindowToolGUID</key>
 			<string>E77390430C0E890D00D98904</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -889,8 +1017,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {366, 168}}</string>
-											<string>{{0, 173}, {366, 270}}</string>
+											<string>{{0, 0}, {493, 168}}</string>
+											<string>{{0, 173}, {493, 270}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -939,9 +1067,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>E77390830C0E8CEF00D98904</string>
+				<string>E76BA68E0C0E922D006750EF</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>E77390840C0E8CEF00D98904</string>
+				<string>E76BA68F0C0E922D006750EF</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>
