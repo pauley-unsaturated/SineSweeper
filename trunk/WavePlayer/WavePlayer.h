@@ -27,6 +27,8 @@
   double functionIncrement;
   unsigned int freqUpdateInterval;
   unsigned int curSampleInterval;
+  
+  BOOL isAnalog;
 
    /*Stream descriptions, necessary for CoreAudio registration*/
   AudioStreamBasicDescription sourceStreamFormat;

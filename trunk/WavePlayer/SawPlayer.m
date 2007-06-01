@@ -22,12 +22,26 @@
 		Float32 currentFrequency;
 		double  functionIncrement;
 		double  currentFunctValue;
+		double  currentSquare;
+		double  currentDerivative;
 		
 		currentFrequency = freqBuffer[frameNumber];
 		functionIncrement = (double)currentFrequency / (double)bufferDescription.mSampleRate;
 		
-		currentFunctValue = (curWavePosition * 2.0) - 1.0;
-		intFunctValue = (SInt16)(currentFunctValue * (double)(1 << (bufferDescription.mBitsPerChannel - 2)));
+		currentFunctValue = ((curWavePosition * 2.0) - 1.0);
+		if(isAnalog) {
+			currentSquare = currentFunctValue * currentFunctValue;
+			currentDerivative = currentSquare - previousSquare;
+			previousSquare = currentSquare;
+			
+			currentDerivative *= bufferDescription.mSampleRate / 
+				((4 * currentFrequency) * (1 - currentFrequency / bufferDescription.mSampleRate));
+			
+			intFunctValue = (SInt16)(currentDerivative * kAmplitude * (double)(1 << (bufferDescription.mBitsPerChannel - 2)));
+		}
+		else {
+			intFunctValue = (SInt16)(currentFunctValue * kAmplitude * (double)(1 << (bufferDescription.mBitsPerChannel - 2)));
+		}
 		curWavePosition = fmod((curWavePosition + functionIncrement), 1);
 		
 		currentFrame = ((SInt16*)buffer) + (frameNumber * bufferDescription.mChannelsPerFrame);

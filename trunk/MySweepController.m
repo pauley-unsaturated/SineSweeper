@@ -8,7 +8,7 @@
   if(nil == (self = [super init]))
 	return nil;
   
-  player = [[SinePlayer alloc] init];
+  player = [[SawPlayer alloc] init];
   
   return self;
 }
@@ -59,7 +59,7 @@
 						   outOf:maxValue.width
 							from:20.0
 							  to:20000.0];
-  //ack, this is coupling the nib to the controller... not so great
+  
   [self updatePlayer];
   [self updateDisplay];
  }
@@ -83,9 +83,6 @@
 
 - (IBAction)toggleSweep:(NSButton*)sender
 {
-  //[player setMinFreq: [startingFrequency doubleValue]];
-  //[player setMaxFreq: [endingFrequency doubleValue]];
-  //[player setSweepRate: [sweepRate doubleValue]];
   if([sender state] == NSOnState)
 	[player startPlaying];
   else
