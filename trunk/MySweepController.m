@@ -1,6 +1,13 @@
 #import "MySweepController.h"
 #include <math.h>
 
+enum {
+	kSineChoice = 0,
+	kSawChoice,
+	kTriangleChoice,
+	kPulseChoice
+};
+
 @implementation MySweepController
 
 -(id)init
@@ -8,7 +15,7 @@
   if(nil == (self = [super init]))
 	return nil;
   
-  player = [[SawPlayer alloc] init];
+  player = [[SinePlayer alloc] init];
   
   return self;
 }
@@ -83,18 +90,58 @@
 
 - (IBAction)toggleSweep:(NSButton*)sender
 {
-  if([sender state] == NSOnState)
+  if([sweepButton state] == NSOnState)
 	[player startPlaying];
   else
 	[player stopPlaying];
 }
 
+- (IBAction)changeWaveform: (NSMatrix*)sender {
+	int waveformChoice = [sender selectedRow];
+	[player stopPlaying];
+	[player release];
+	player = NULL;
+	switch(waveformChoice) {
+		case kSineChoice:
+			player = [[SinePlayer alloc] init];
+			break;
+		case kSawChoice:
+			player = [[SawPlayer alloc] init];
+			break;
+		case kTriangleChoice:
+			//player = [[TrianglePlayer alloc] init];
+			break;
+		case kPulseChoice:
+			player = [[PulsePlayer alloc] init];
+			break;
+	}
+	//[waveformSelectionMatrix setNeedsDisplay:YES];
+	if(player) {
+		[self updatePlayer];
+		if([sweepButton state] == NSOnState)
+			[player startPlaying];
+	}
+	else {
+		[sweepButton setState:NSOffState];
+		[sweepButton setNeedsDisplay:YES];
+	}
+}
+
+- (IBAction)toggleAnalog: (NSButton*)sender {
+	[self updatePlayer];
+	[self updateDisplay];
+}
+
+
 -(void)updatePlayer
 {
-  [player setSweepRate: sweepRate];
-  [player setStartFreq: startFreq];
-  [player setEndFreq: endFreq];
-  [player setFreqUpdateInterval: updateInterval];
+  if(player) {
+	[player setSweepRate: sweepRate];
+	[player setStartFreq: startFreq];
+	[player setEndFreq: endFreq];
+	[player setFreqUpdateInterval: updateInterval];
+	[player setIsAnalog: [analogToggle state]?YES:NO];
+  }
 }
 
 -(void)updateDisplay

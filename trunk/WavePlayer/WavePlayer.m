@@ -18,7 +18,7 @@
 						 | kAudioFormatFlagIsPacked
 
 
-//TODO: move these to a nicer location or make em #defines... for christs sake
+//TODO: move these to a nicer location or make em #defines
 const UInt32 kSourceSampleRate = 44100.0;/*hi-fi n stuff!*/
 const UInt32 kNumChannels = 2; //stairy-airy oh!
 const UInt32 kNumBitsPerChannel = 16;
@@ -104,7 +104,6 @@ static void streamPropertyListenerStub (void *inRefCon,
   playBufferSize = 0;
   curSampleInterval = 0;
   freqUpdateInterval = 1;
-  functionIncrement = (double)curPlayingFreq / (double)sourceStreamFormat.mSampleRate;
   
   ComponentDescription desc;
   desc.componentType = kAudioUnitType_Output;
@@ -139,7 +138,7 @@ static void streamPropertyListenerStub (void *inRefCon,
   
 
   
-  // set the callback function
+  // set the render callback function
   renderCallback.inputProc = (void*)renderStub;
   renderCallback.inputProcRefCon = (void*)self;
     
@@ -150,7 +149,7 @@ static void streamPropertyListenerStub (void *inRefCon,
 									 &renderCallback,
 									 sizeof(AURenderCallbackStruct)) );
   
-  
+  // set output stream format
   verify_noerr( AudioUnitSetProperty(myAudioUnit,
 									 kAudioUnitProperty_StreamFormat,
 									 kAudioUnitScope_Input,
@@ -344,7 +343,15 @@ packetDescriptionHandle: (AudioStreamPacketDescription**)outDataPacketDescriptio
 }
 
 -(void)fillBuffer:(void*)buffer withFrames:(UInt32)numFrames ofStreamDescription:(AudioStreamBasicDescription)bufferDescription {
+	memset(buffer,0,numFrames * bufferDescription.mBytesPerFrame);
+}
 
+-(void)setIsAnalog:(BOOL)newIsAnalog {
+	isAnalog = newIsAnalog;
+}
+
+-(BOOL)isAnalog {
+	return isAnalog;
 }
 
 @end

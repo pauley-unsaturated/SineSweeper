@@ -14,17 +14,14 @@
   UInt32  frameNumber;
   UInt32  channelNumber;
   double  currentFunctValue;
-  double  freqMultValue;
   
   if(!buffer)return;
-  
-  //precompute the frequency ahead of time (perhaps this should go into the caller?
-  
 
   for(frameNumber = 0; frameNumber <  numFrames; frameNumber++) {
 	SInt16    intFunctValue;
 	SInt16*   currentFrame;
     Float32   currentFrequency;
+	double    functionIncrement;
 
     currentFrequency = freqBuffer[frameNumber];
     functionIncrement = (double)currentFrequency / (double)bufferDescription.mSampleRate;

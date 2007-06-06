@@ -24,7 +24,6 @@
   double curPlayingFreq;
   double sweepRate;
   double freqIncrement;
-  double functionIncrement;
   unsigned int freqUpdateInterval;
   unsigned int curSampleInterval;
   
@@ -109,5 +108,8 @@
 -(void)setSweepRate:(double)newSweepRate;
 
 -(void)setFreqUpdateInterval:(unsigned int)samples;
+
+-(void)setIsAnalog:(BOOL)isAnalog;
+-(BOOL)isAnalog;
 
 @end

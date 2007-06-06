@@ -3,17 +3,20 @@
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
             ACTIONS = {
+                changeWaveform = id; 
                 endingFreqChange = id; 
                 frequencyControllerChange = id; 
                 resetSweep = id; 
                 startingFrequencyChange = id; 
                 sweepRateChange = id; 
+                toggleAnalog = id; 
                 toggleSweep = id; 
                 updateIntervalChange = id; 
             }; 
             CLASS = MySweepController; 
             LANGUAGE = ObjC; 
             OUTLETS = {
+                analogToggle = NSButton; 
                 endingFrequencyDisplay = NSTextField; 
                 frequencyController = TwoDimensionalControl; 
                 startingFrequencyDisplay = NSTextField; 
@@ -21,6 +24,7 @@
                 sweepRateController = NSControl; 
                 sweepRateDisplay = NSTextField; 
                 updateIntervalDisplay = NSTextField; 
+                waveformSelectionMatrix = NSMatrix; 
             }; 
             SUPERCLASS = NSObject; 
         }, 

@@ -4,6 +4,7 @@
 #import "WavePlayer.h"
 #import "SinePlayer.h"
 #import "SawPlayer.h"
+#import "PulsePlayer.h"
 
 #import <TwoDimensionalControl/TwoDimensionalControl.h>
 
@@ -19,8 +20,10 @@
   IBOutlet NSTextField*  updateIntervalDisplay;
   
   IBOutlet NSButton*   sweepButton;
+  IBOutlet NSButton*   analogToggle;
+  IBOutlet NSMatrix*   waveformSelectionMatrix;
   
-  SinePlayer*          player;
+  WavePlayer*          player;
   
   double sweepRate;  //in octaves
   double startFreq;  //in hz
@@ -36,6 +39,8 @@
 - (IBAction)updateIntervalChange:(NSControl *)sender;
 - (IBAction)toggleSweep:(NSButton*)sender;
 - (IBAction)resetSweep: (NSButton*)sender;
+- (IBAction)changeWaveform: (NSMatrix*)sender;
+- (IBAction)toggleAnalog: (NSButton*)sender;
 - (void)updatePlayer;
 - (void)updateDisplay;
 
