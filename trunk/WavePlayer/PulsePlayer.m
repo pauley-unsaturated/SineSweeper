@@ -19,6 +19,7 @@
 	
 	// I make a pulse by subtraction of two sawtooth waves.  The phase offset determines the duty cycle.
 	// the pseudo-analog algo I'm using requires sawtooth waves.
+    // TODO: implement this by using two SawPlayers with a phase offset
 	-(void)fillBuffer:(void*)buffer withFrames:(UInt32)numFrames ofStreamDescription:(AudioStreamBasicDescription)bufferDescription {
 		static double previousPosSquare = 0;
 		static double previousNegSquare = 0;

@@ -19,6 +19,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		E73D7CFE0C28F3C5001EB048 /* TrianglePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E73D7CFC0C28F3C5001EB048 /* TrianglePlayer.h */; };
+		E73D7CFF0C28F3C5001EB048 /* TrianglePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E73D7CFD0C28F3C5001EB048 /* TrianglePlayer.m */; };
 		E76BA65A0C0E8E17006750EF /* WavePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E76BA6580C0E8E17006750EF /* WavePlayer.h */; };
 		E76BA65B0C0E8E17006750EF /* WavePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6590C0E8E17006750EF /* WavePlayer.m */; };
 		E76BA6AF0C0E9811006750EF /* SawPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E76BA6AD0C0E9811006750EF /* SawPlayer.h */; };
@@ -77,6 +79,8 @@
 		32CA4F630368D1EE00C91783 /* SineSweeper_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineSweeper_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73D7CFC0C28F3C5001EB048 /* TrianglePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrianglePlayer.h; sourceTree = "<group>"; };
+		E73D7CFD0C28F3C5001EB048 /* TrianglePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrianglePlayer.m; sourceTree = "<group>"; };
 		E76BA6580C0E8E17006750EF /* WavePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavePlayer.h; sourceTree = "<group>"; };
 		E76BA6590C0E8E17006750EF /* WavePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavePlayer.m; sourceTree = "<group>"; };
 		E76BA6AD0C0E9811006750EF /* SawPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SawPlayer.h; sourceTree = "<group>"; };
@@ -192,11 +196,21 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		E73D7CF90C28F366001EB048 /* TrianglePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E73D7CFC0C28F3C5001EB048 /* TrianglePlayer.h */,
+				E73D7CFD0C28F3C5001EB048 /* TrianglePlayer.m */,
+			);
+			name = TrianglePlayer;
+			sourceTree = "<group>";
+		};
 		E76BA6570C0E8DF2006750EF /* WavePlayer */ = {
 			isa = PBXGroup;
 			children = (
 				E76BA6580C0E8E17006750EF /* WavePlayer.h */,
 				E76BA6590C0E8E17006750EF /* WavePlayer.m */,
+				E73D7CF90C28F366001EB048 /* TrianglePlayer */,
 				E7D29E2D0C13C0750003DFF6 /* PulsePlayer */,
 				30DB7336068E6EC700A1115E /* SinePlayer */,
 				E76BA6A80C0E94EA006750EF /* SawPlayer */,
@@ -235,6 +249,7 @@
 				E76BA65A0C0E8E17006750EF /* WavePlayer.h in Headers */,
 				E76BA6AF0C0E9811006750EF /* SawPlayer.h in Headers */,
 				E7D29E300C13C0B00003DFF6 /* PulsePlayer.h in Headers */,
+				E73D7CFE0C28F3C5001EB048 /* TrianglePlayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +320,7 @@
 				E76BA65B0C0E8E17006750EF /* WavePlayer.m in Sources */,
 				E76BA6B00C0E9811006750EF /* SawPlayer.m in Sources */,
 				E7D29E310C13C0B00003DFF6 /* PulsePlayer.m in Sources */,
+				E73D7CFF0C28F3C5001EB048 /* TrianglePlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
