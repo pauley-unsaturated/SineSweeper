@@ -82,8 +82,7 @@ static void streamPropertyListenerStub (void *inRefCon,
 
 @implementation WavePlayer
 
--(id)init
-{
+-(id)init {
   if(nil == (self = [super init]))
 	return nil;
   

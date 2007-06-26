@@ -10,7 +10,8 @@
 
 
 @interface TrianglePlayer : WavePlayer {
-  int curPolarity;	
+  double previousSquare;
+  int curPolarity;
 }
 
 @end

@@ -10,7 +10,7 @@
 
 
 @interface SawPlayer : WavePlayer {
-	
+	double previousSquare;
 }
 
 @end

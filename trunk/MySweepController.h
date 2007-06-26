@@ -5,6 +5,7 @@
 #import "SinePlayer.h"
 #import "SawPlayer.h"
 #import "PulsePlayer.h"
+#import "TrianglePlayer.h"
 
 #import <TwoDimensionalControl/TwoDimensionalControl.h>
 

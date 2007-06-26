@@ -109,7 +109,7 @@ enum {
 			player = [[SawPlayer alloc] init];
 			break;
 		case kTriangleChoice:
-			//player = [[TrianglePlayer alloc] init];
+			player = [[TrianglePlayer alloc] init];
 			break;
 		case kPulseChoice:
 			player = [[PulsePlayer alloc] init];

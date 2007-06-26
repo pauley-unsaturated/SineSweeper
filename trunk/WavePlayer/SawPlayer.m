@@ -11,8 +11,15 @@
 
 @implementation SawPlayer
 
+-(id)init {
+ if(nil == (self = [super init]))
+   return nil;
+  
+  previousSquare = 0.0;
+  return self;
+}
+
 -(void)fillBuffer:(void*)buffer withFrames:(UInt32)numFrames ofStreamDescription:(AudioStreamBasicDescription)bufferDescription {
-	static double previousSquare;
 	UInt32 frameNumber;
 	UInt32 channelNumber;
 	
