@@ -34,13 +34,17 @@
     
     //In the case of triangle wave we use a sawtooth an octave up and flip the waveform
     // on the ramp reset.
-    currentFrequency = freqBuffer[frameNumber] * 2;
-    functionIncrement = (double)currentFrequency / (double)bufferDescription.mSampleRate;
-    currentFunctValue = ((curWavePosition * 2.0) - 1.0);
+    
     
     if(isAnalog) {
-      double  currentSquare = currentFunctValue * currentFunctValue;
-      double  currentDerivative = currentSquare - previousSquare;
+      double  currentSquare;
+      double  currentDerivative;
+      
+      currentFrequency = freqBuffer[frameNumber] * 2.0;
+      currentFunctValue = ((curWavePosition * 2.0) - 1.0);
+      
+      currentSquare = (double)curPolarity * (1.0 - (currentFunctValue * currentFunctValue));
+      currentDerivative = currentSquare - previousSquare;
       
       previousSquare = currentSquare;
       
@@ -50,14 +54,17 @@
       intFunctValue = (SInt16)(currentDerivative * kAmplitude * (double)(1 << (bufferDescription.mBitsPerChannel - 2)));      
     }
     else {
+      currentFrequency = freqBuffer[frameNumber];
+      currentFunctValue = 1.0 - (2.0 * fabs(.5 - curWavePosition));
       intFunctValue = (SInt16)(currentFunctValue * kAmplitude * (double)(1 << (bufferDescription.mBitsPerChannel - 2)));
     }
+    
+    functionIncrement = (double)currentFrequency / (double)bufferDescription.mSampleRate;
     curWavePosition = curWavePosition + functionIncrement;
-    while(curWavePosition >= 1.0) {
+    while(curWavePosition > 1.0) {
       curWavePosition -= 1.0;
       curPolarity *= -1;
     }
-    intFunctValue *= (SInt16)curPolarity;
     currentFrame = ((SInt16*)buffer) + (frameNumber * bufferDescription.mChannelsPerFrame);
     for(channelNumber = 0; channelNumber < bufferDescription.mChannelsPerFrame; channelNumber++)
       *(currentFrame + channelNumber) = intFunctValue;

@@ -31,6 +31,23 @@
 		E7D29E310C13C0B00003DFF6 /* PulsePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D29E2F0C13C0B00003DFF6 /* PulsePlayer.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildStyle section */
+		E79803890C322E7600D2C770 /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Development;
+		};
+		E798038A0C322E7600D2C770 /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		3002FB0D06C5DE36000812B7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -265,11 +282,15 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 3096578709573B21007AFAD9 /* Build configuration list for PBXProject "SineSweeper" */;
-			compatibilityVersion = "Xcode 2.4";
+			buildSettings = {
+			};
+			buildStyles = (
+				E79803890C322E7600D2C770 /* Development */,
+				E798038A0C322E7600D2C770 /* Deployment */,
+			);
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* SineSweeper */;
 			projectDirPath = "";
-			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* SineSweeper */,
 			);
