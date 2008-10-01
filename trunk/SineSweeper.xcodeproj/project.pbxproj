@@ -31,23 +31,6 @@
 		E7D29E310C13C0B00003DFF6 /* PulsePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D29E2F0C13C0B00003DFF6 /* PulsePlayer.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		E79803890C322E7600D2C770 /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Development;
-		};
-		E798038A0C322E7600D2C770 /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		3002FB0D06C5DE36000812B7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -73,7 +56,7 @@
 		304D0465099E8E2E00F4EFFE /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
 		3060F7F8067EBC270008C431 /* MySweepController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MySweepController.h; sourceTree = "<group>"; };
 		3060F7F9067EBC270008C431 /* MySweepController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MySweepController.m; sourceTree = "<group>"; };
-		3078873F0A156C8E008F1F83 /* SineSweeperUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SineSweeperUnit-Info.plist"; sourceTree = "<group>"; };
+		3078873F0A156C8E008F1F83 /* SineSweeperUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SineSweeperUnit-Info.plist"; sourceTree = "<group>"; };
 		30DB7339068E6EE000A1115E /* SinePlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SinePlayer.h; path = WavePlayer/SinePlayer.h; sourceTree = "<group>"; };
 		30DB733A068E6EE000A1115E /* SinePlayer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SinePlayer.m; path = WavePlayer/SinePlayer.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* SineSweeper_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineSweeper_Prefix.pch; sourceTree = "<group>"; };
@@ -282,15 +265,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 3096578709573B21007AFAD9 /* Build configuration list for PBXProject "SineSweeper" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				E79803890C322E7600D2C770 /* Development */,
-				E798038A0C322E7600D2C770 /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* SineSweeper */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* SineSweeper */,
 			);
@@ -368,7 +347,6 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = SineSweeper;
