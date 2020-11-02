@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = TwoDimensionalControl; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = TwoDimensionalControlPalette; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = IBPalette; 
+        }
+    ); 
+    IBVersion = 1; 
+}

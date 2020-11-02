@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = TwoDimensionalControlInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                maxXField = NSTextField; 
+                maxYField = NSTextField; 
+                minXField = NSTextField; 
+                minYField = NSTextField; 
+                xAxisValueFunctionPopUp = NSPopUpButton; 
+                yAxisValueFunctionPopUp = NSPopUpButton; 
+            }; 
+            SUPERCLASS = IBInspector; 
+        }, 
+        {
+            CLASS = "\U0190ROJECTNAMEASIDENTIFIER\U01c9nspector"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = IBInspector; 
+        }
+    ); 
+    IBVersion = 1; 
+}

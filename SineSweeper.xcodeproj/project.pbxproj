@@ -25,11 +25,35 @@
 		E76BA65B0C0E8E17006750EF /* WavePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6590C0E8E17006750EF /* WavePlayer.m */; };
 		E76BA6AF0C0E9811006750EF /* SawPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E76BA6AD0C0E9811006750EF /* SawPlayer.h */; };
 		E76BA6B00C0E9811006750EF /* SawPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6AE0C0E9811006750EF /* SawPlayer.m */; };
-		E773906B0C0E899D00D98904 /* TwoDimensionalControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */; };
 		E77B6E1E0BCAA9E80039A7F6 /* TwoDimensionalControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */; };
+		E79272E5210FD4D6007D62F2 /* TwoDimensionalControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E79272E0210FD481007D62F2 /* TwoDimensionalControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E7D29E300C13C0B00003DFF6 /* PulsePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D29E2E0C13C0B00003DFF6 /* PulsePlayer.h */; };
 		E7D29E310C13C0B00003DFF6 /* PulsePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D29E2F0C13C0B00003DFF6 /* PulsePlayer.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E79272DF210FD481007D62F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3002FAB006C5D5CF000812B7;
+			remoteInfo = "TwoDimensionalControl framework";
+		};
+		E79272E1210FD481007D62F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3002FC3306C5F9AC000812B7;
+			remoteInfo = TwoDimensionalControl;
+		};
+		E79272E3210FD48D007D62F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3002FAAF06C5D5CF000812B7;
+			remoteInfo = "TwoDimensionalControl framework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3002FB0D06C5DE36000812B7 /* CopyFiles */ = {
@@ -38,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E773906B0C0E899D00D98904 /* TwoDimensionalControl.framework in CopyFiles */,
+				E79272E5210FD4D6007D62F2 /* TwoDimensionalControl.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +93,7 @@
 		E76BA6AD0C0E9811006750EF /* SawPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SawPlayer.h; sourceTree = "<group>"; };
 		E76BA6AE0C0E9811006750EF /* SawPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SawPlayer.m; sourceTree = "<group>"; };
 		E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwoDimensionalControl.framework; path = ../TwoDimensionalControl/build/Development/TwoDimensionalControl.framework; sourceTree = SOURCE_ROOT; };
+		E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TwoDimensionalControl.xcodeproj; path = ../../TwoDimensionalControl/trunk/TwoDimensionalControl.xcodeproj; sourceTree = "<group>"; };
 		E7D29E2E0C13C0B00003DFF6 /* PulsePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsePlayer.h; sourceTree = "<group>"; };
 		E7D29E2F0C13C0B00003DFF6 /* PulsePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsePlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +145,7 @@
 		29B97314FDCFA39411CA2CEA /* SineSweeper */ = {
 			isa = PBXGroup;
 			children = (
+				E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */,
 				E76BA6570C0E8DF2006750EF /* WavePlayer */,
 				E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */,
 				3060F828067EBE0F0008C431 /* SweepController */,
@@ -210,6 +236,15 @@
 			name = SawPlayer;
 			sourceTree = "<group>";
 		};
+		E79272DA210FD481007D62F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E79272E0210FD481007D62F2 /* TwoDimensionalControl.framework */,
+				E79272E2210FD481007D62F2 /* TwoDimensionalControl.palette */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E7D29E2D0C13C0750003DFF6 /* PulsePlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E79272E4210FD48D007D62F2 /* PBXTargetDependency */,
 			);
 			name = SineSweeper;
 			productInstallPath = "$(HOME)/Applications";
@@ -264,17 +300,46 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 3096578709573B21007AFAD9 /* Build configuration list for PBXProject "SineSweeper" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* SineSweeper */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E79272DA210FD481007D62F2 /* Products */;
+					ProjectRef = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* SineSweeper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E79272E0210FD481007D62F2 /* TwoDimensionalControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TwoDimensionalControl.framework;
+			remoteRef = E79272DF210FD481007D62F2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E79272E2210FD481007D62F2 /* TwoDimensionalControl.palette */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TwoDimensionalControl.palette;
+			remoteRef = E79272E1210FD481007D62F2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
@@ -304,6 +369,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E79272E4210FD48D007D62F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TwoDimensionalControl framework";
+			targetProxy = E79272E3210FD48D007D62F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
