@@ -17,7 +17,7 @@
                          | kAudioFormatFlagsNativeEndian\
 						 | kAudioFormatFlagIsPacked
 
-
+#define verify_noerr(f) do { OSStatus r = (f); assert(r == noErr); }while(0)
 //TODO: move these to a nicer location or make em #defines
 const UInt32 kSourceSampleRate = 44100.0;/*hi-fi n stuff!*/
 const UInt32 kNumChannels = 2; //stairy-airy oh!

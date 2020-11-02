@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,35 +25,10 @@
 		E76BA65B0C0E8E17006750EF /* WavePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6590C0E8E17006750EF /* WavePlayer.m */; };
 		E76BA6AF0C0E9811006750EF /* SawPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E76BA6AD0C0E9811006750EF /* SawPlayer.h */; };
 		E76BA6B00C0E9811006750EF /* SawPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76BA6AE0C0E9811006750EF /* SawPlayer.m */; };
-		E77B6E1E0BCAA9E80039A7F6 /* TwoDimensionalControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */; };
-		E79272E5210FD4D6007D62F2 /* TwoDimensionalControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E79272E0210FD481007D62F2 /* TwoDimensionalControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E7A0BD5E254FD3A100C86F26 /* TwoDimensionalControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A0BD5D254FD3A100C86F26 /* TwoDimensionalControl.framework */; };
 		E7D29E300C13C0B00003DFF6 /* PulsePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D29E2E0C13C0B00003DFF6 /* PulsePlayer.h */; };
 		E7D29E310C13C0B00003DFF6 /* PulsePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D29E2F0C13C0B00003DFF6 /* PulsePlayer.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E79272DF210FD481007D62F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3002FAB006C5D5CF000812B7;
-			remoteInfo = "TwoDimensionalControl framework";
-		};
-		E79272E1210FD481007D62F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3002FC3306C5F9AC000812B7;
-			remoteInfo = TwoDimensionalControl;
-		};
-		E79272E3210FD48D007D62F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3002FAAF06C5D5CF000812B7;
-			remoteInfo = "TwoDimensionalControl framework";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3002FB0D06C5DE36000812B7 /* CopyFiles */ = {
@@ -62,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E79272E5210FD4D6007D62F2 /* TwoDimensionalControl.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +66,7 @@
 		E76BA6590C0E8E17006750EF /* WavePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavePlayer.m; sourceTree = "<group>"; };
 		E76BA6AD0C0E9811006750EF /* SawPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SawPlayer.h; sourceTree = "<group>"; };
 		E76BA6AE0C0E9811006750EF /* SawPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SawPlayer.m; sourceTree = "<group>"; };
-		E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwoDimensionalControl.framework; path = ../TwoDimensionalControl/build/Development/TwoDimensionalControl.framework; sourceTree = SOURCE_ROOT; };
-		E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TwoDimensionalControl.xcodeproj; path = ../../TwoDimensionalControl/trunk/TwoDimensionalControl.xcodeproj; sourceTree = "<group>"; };
+		E7A0BD5D254FD3A100C86F26 /* TwoDimensionalControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TwoDimensionalControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D29E2E0C13C0B00003DFF6 /* PulsePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsePlayer.h; sourceTree = "<group>"; };
 		E7D29E2F0C13C0B00003DFF6 /* PulsePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsePlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,11 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A0BD5E254FD3A100C86F26 /* TwoDimensionalControl.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				3039F554069744E100B708B8 /* CoreAudio.framework in Frameworks */,
 				3039F5660697451000B708B8 /* AudioToolbox.framework in Frameworks */,
 				304D0466099E8E2E00F4EFFE /* AudioUnit.framework in Frameworks */,
-				E77B6E1E0BCAA9E80039A7F6 /* TwoDimensionalControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +118,7 @@
 		29B97314FDCFA39411CA2CEA /* SineSweeper */ = {
 			isa = PBXGroup;
 			children = (
-				E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */,
 				E76BA6570C0E8DF2006750EF /* WavePlayer */,
-				E77B6E1D0BCAA9E80039A7F6 /* TwoDimensionalControl.framework */,
 				3060F828067EBE0F0008C431 /* SweepController */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -180,6 +151,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7A0BD5D254FD3A100C86F26 /* TwoDimensionalControl.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -236,15 +208,6 @@
 			name = SawPlayer;
 			sourceTree = "<group>";
 		};
-		E79272DA210FD481007D62F2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E79272E0210FD481007D62F2 /* TwoDimensionalControl.framework */,
-				E79272E2210FD481007D62F2 /* TwoDimensionalControl.palette */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E7D29E2D0C13C0750003DFF6 /* PulsePlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,7 +250,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E79272E4210FD48D007D62F2 /* PBXTargetDependency */,
 			);
 			name = SineSweeper;
 			productInstallPath = "$(HOME)/Applications";
@@ -301,6 +263,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1220;
 			};
 			buildConfigurationList = 3096578709573B21007AFAD9 /* Build configuration list for PBXProject "SineSweeper" */;
 			compatibilityVersion = "Xcode 2.4";
@@ -308,38 +271,16 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* SineSweeper */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E79272DA210FD481007D62F2 /* Products */;
-					ProjectRef = E79272D9210FD481007D62F2 /* TwoDimensionalControl.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* SineSweeper */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E79272E0210FD481007D62F2 /* TwoDimensionalControl.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = TwoDimensionalControl.framework;
-			remoteRef = E79272DF210FD481007D62F2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E79272E2210FD481007D62F2 /* TwoDimensionalControl.palette */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TwoDimensionalControl.palette;
-			remoteRef = E79272E1210FD481007D62F2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
@@ -370,14 +311,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		E79272E4210FD48D007D62F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TwoDimensionalControl framework";
-			targetProxy = E79272E3210FD48D007D62F2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -401,13 +334,13 @@
 		3096578409573B21007AFAD9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../TwoDimensionalControl/build/Development\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -422,6 +355,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.myCocoaApp;
 				PRODUCT_NAME = SineSweeper;
 				SDKROOT = "$(SDKROOT)";
 				SECTORDER_FLAGS = "";
@@ -438,11 +372,11 @@
 		3096578509573B21007AFAD9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../TwoDimensionalControl/build/Development\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -456,6 +390,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.myCocoaApp;
 				PRODUCT_NAME = SineSweeper;
 				SDKROOT = "$(SDKROOT)";
 				SECTORDER_FLAGS = "";
@@ -472,7 +407,8 @@
 		3096578609573B21007AFAD9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../TwoDimensionalControl/build/Development\"";
 				GCC_ENABLE_TRIGRAPHS = NO;
@@ -488,6 +424,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.myCocoaApp;
 				PRODUCT_NAME = SineSweeper;
 				SDKROOT = "$(SDKROOT)";
 				SECTORDER_FLAGS = "";
@@ -503,21 +440,104 @@
 		3096578809573B21007AFAD9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../TwoDimensionalControl/build/Development";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
 		3096578909573B21007AFAD9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../TwoDimensionalControl/build/Development";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Deployment;
 		};
 		3096578A09573B21007AFAD9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../TwoDimensionalControl/build/Development";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Default;
 		};

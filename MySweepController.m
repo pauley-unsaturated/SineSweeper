@@ -1,7 +1,7 @@
 #import "MySweepController.h"
 #include <math.h>
 
-enum {
+enum WaveChoice {
 	kSineChoice = 0,
 	kSawChoice,
 	kTriangleChoice,
@@ -90,14 +90,14 @@ enum {
 
 - (IBAction)toggleSweep:(NSButton*)sender
 {
-  if([sweepButton state] == NSOnState)
+    if([sweepButton state] == NSControlStateValueOn)
 	[player startPlaying];
   else
 	[player stopPlaying];
 }
 
 - (IBAction)changeWaveform: (NSMatrix*)sender {
-	int waveformChoice = [sender selectedRow];
+	enum WaveChoice waveformChoice = (enum WaveChoice)[sender selectedRow];
 	[player stopPlaying];
 	[player release];
 	player = NULL;
@@ -118,11 +118,11 @@ enum {
 	//[waveformSelectionMatrix setNeedsDisplay:YES];
 	if(player) {
 		[self updatePlayer];
-		if([sweepButton state] == NSOnState)
+        if([sweepButton state] == NSControlStateValueOn)
 			[player startPlaying];
 	}
 	else {
-		[sweepButton setState:NSOffState];
+        [sweepButton setState:NSControlStateValueOff];
 		[sweepButton setNeedsDisplay:YES];
 	}
 }
